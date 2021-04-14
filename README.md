@@ -1,2 +1,3 @@
 # dwheat2-pwp
-pwp repo
+
+professional website project: creating a portfolio piece for myself.
