@@ -1,0 +1,17 @@
+PWP Milestone 2
+Content Strategy
+My site will be one page, and will consist of the following sections:
+
+Navbar, with links to each section, and a dropdown for my socials (linkedin, github, etc.)
+
+Welcome: A brief one-line introduction that clearly states my name and role as a Front End Developer. This welcome message will be in a jumbotron with a cliché picture of downtown abq
+
+About Me: this section will be about who I am as a professional, not just a web devloper. I'll speak on my ability to communicate and meet deadlines, etc
+
+Skills: This will detail my proficiency in different programming languages.
+
+Experience: A brief history of relevant work.
+
+Contact: This section will contain a simple contact form sending to my professional email address that I've already set up: dwheat.dev@gmail.com
+
+(I am tentative at the idea of adding a portfolio section, as it will not be very impressive right away.)
