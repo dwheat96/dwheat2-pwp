@@ -3,8 +3,14 @@
 
 }
 
+#expRow {
+    justify-content: space-evenly ;
+}
 
-
+#expCol {
+    max-width: 25rem;
+    text-align: center;
+}
 
 #expIcons {
     max-height: 5rem;
