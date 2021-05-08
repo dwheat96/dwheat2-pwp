@@ -40,6 +40,8 @@ h1  {
 
 
 #footerIcon {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     max-height: 3rem;
     max-width: auto;
 }
