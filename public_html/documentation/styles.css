@@ -32,3 +32,8 @@ h1  {
     display: block;
 
 }
+
+#footer-icon {
+    max-height: 3rem;
+    max-width: auto;
+}
