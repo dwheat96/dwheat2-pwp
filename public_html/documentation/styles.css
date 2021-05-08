@@ -33,7 +33,18 @@ h1  {
 
 }
 
-#footer-icon {
+#footerRow{
+    justify-content: center;
+}
+
+
+
+#footerIcon {
     max-height: 3rem;
     max-width: auto;
+}
+
+footer {
+    background-color: rgb(53,58,64);
+    justify-content: center;
 }
