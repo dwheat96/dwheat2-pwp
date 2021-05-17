@@ -12,9 +12,9 @@ const validation = [
     check("name", "A valid name is required").not().isEmpty().trim().escape(),
     check("email", "Please provide a valid email").isEmail(),
     check("subject").optional().trim().escape(),
-    check("message", "Please provide a message that is under two thousand characters")
+    check("message", "Please provide a message that is under four thousand characters")
         .trim()
-        .escape().isLength({min:1, max:2000})
+        .escape().isLength({min:1, max:4000})
 
 ]
 
@@ -65,7 +65,7 @@ const handlePostRequest = (request, response, next) => {
         if (error) {
             console.log(error)
             return(response.send(Buffer.from(`<div class='alert alert-danger' role='alert'><strong>Oh
-                snap!</strong> Unable to send email error with email sender.</div>`)))
+                snap!</strong> Unable to send that email, try reaching out to me on LinkedIn!</div>`)))
         }
         return response.send(Buffer.from("<div class='alert alert-success' role='alert'>Email successfully sent.</div>"))
 

@@ -57,25 +57,25 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-3 mx-auto mb-5 text-center">
+        <div class="col-lg-3 mx-auto mb-5 text-center">
             <h3>Coding Skills</h3>
             <h4>Front End</h4>
             <p>HTML5, CSS3, JavaScript, Bootstrap 4</p>
             <h4>Back End</h4>
             <p>MySQL</p>
         </div>
-        <div class="col-md-3 mx-auto mb-5 text-center">
+        <div class="col-lg-3 mx-auto mb-5 text-center">
             <h3>Communication</h3>
             <p>Excellent written and verbal communication skills.
                 Confident, articulate, and professional speaking abilities (and experience).
                 Empathic listener and persuasive speaker.
             </p>
         </div>
-        <div class="col-md-3 mx-auto mb-5 text-center">
+        <div class="col-lg-3 mx-auto mb-5 text-center">
             <h3>Discipline</h3>
             <p>Both on the mat and off, earning my black belt in Kenpo 5.0 taught me the discipline to persevere through any challenge.</p>
         </div>
-        <div class="col-md-3 mx-auto mb-5 text-center">
+        <div class="col-lg-3 mx-auto mb-5 text-center">
             <h3>UI/UX Design</h3>
             <p>I work collaboratively with clients to create snappy, functional, and aesthetically pleasing websites.</p>
         </div>
@@ -139,25 +139,35 @@
         </div>
     </div>
     <div class="row">
-        <form class="col m-3 mx-auto" id="form">
+        <form class="col m-3 mx-auto" id="contact">
             <div class="form-group">
-                <input class="form-control" type="text" placeholder="What do I call you?" aria-label="Name Field">
+                <input class="form-control" type="text" placeholder="What do I call you?" aria-label="Name Field" id="name">
             </div>
             <div class="form-group">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address" aria-label="Email Field">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address" aria-label="Email Field" id="email">
             </div>
             <div class="form-group">
-            <input class="form-control" type="text" placeholder="Subject field" aria-label="Subject Field">
+            <input class="form-control" type="text" placeholder="Subject field" aria-label="Subject Field" id="subject">
             </div>
             <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="A quick message" aria-label="Subject Field"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="A quick message" aria-label="Subject Field" id="message"></textarea>
             </div>
-        </form>
-    </div>
-    <div class="row">
-        <button type="button" class="btn btn-outline-dark mx-auto mb-5">Send</button>
-    </div>
+        <!-- Make sure to add site key provided by google recaptcha -->
+                <div class="g-recaptcha" data-sitekey="6LfrLtQaAAAAACNAPvXxoIJpVpUJyuH15ZTJKXP5"></div>
+                <div class="row">
+                    <button type="button" class="btn btn-outline-dark mx-auto mb-5">Send</button>
+                    <button type="reset" class="btn btn-outline-dark mx-auto mb-5">Reset</button>
+                </div>
+            <div id="output-area"></div>
+                </form>
+        <!-- END CONTACT FORM-->
+
+
+
+
 </div>
+</div>
+
 
 <footer>
     <div class="row" id="footerRow">
@@ -171,11 +181,35 @@
 </footer>
 
 
-<script src="script.js" ></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<!-- Jquery and Bootstrap Dependencies -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- Make sure to use Jquery min and not the slim version provided by Bootstrap -->
+<script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<!-- jQuery Form, Validate, Additional Methods, -->
+<script crossorigin="anonymous"
+        integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha256-F6h55Qw6sweK+t7SiOJX+2bpSAa3b/fnlrVCJvmEj1A="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha256-0Yg/eibVdKyxkuVo1Qwh0DspoUCHvSbm/oOoYVz32BQ="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 
+
+<!-- Google reCAPTCHA -->
 <script src='https://www.google.com/recaptcha/api.js'></script>
+
+<!-- custom jquery script-->
 <script src="./js/script.js"></script>
 </body>
 </html>

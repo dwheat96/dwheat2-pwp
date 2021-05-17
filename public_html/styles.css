@@ -1,5 +1,5 @@
-#form {
-    max-width: 25rem;
+#contact {
+    max-width: 30rem;
 
 }
 
@@ -49,4 +49,8 @@ h1  {
 footer {
     background-color: rgb(53,58,64);
     justify-content: center;
+}
+
+.g-recaptcha {
+    display: inline-block;
 }
