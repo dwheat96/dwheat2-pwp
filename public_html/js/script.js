@@ -33,7 +33,7 @@ $(document).ready(function () {
             }
         },
         submitHandler: (form) => {
-
+        console.log(form)
             $("#contact").ajaxSubmit({
                 type: "POST",
                 url: $("#contact").attr('action'),
@@ -45,10 +45,7 @@ $(document).ready(function () {
                         $("#contact")[0].reset()
                     }
                 }
-
             })
         }
-
-
     })
 })
