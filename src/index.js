@@ -41,7 +41,7 @@ const handlePostRequest = (request, response, next) => {
     response.append("Content-Type", "text/html")
 
     //TODO remove header when Docker has been successfully added.
-    response.append("Access-Control-Allow-Origin", "*")
+    // response.append("Access-Control-Allow-Origin", "*")
 
     if (request.recaptcha.error) {
         return response.send(Buffer.from(`<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong>There was an error with Recaptcha please try again</div>`))
