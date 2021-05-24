@@ -33,7 +33,6 @@ $(document).ready(function () {
             }
         },
         submitHandler: (form) => {
-        console.log(form)
             $("#contact").ajaxSubmit({
                 type: "POST",
                 url: $("#contact").attr('action'),

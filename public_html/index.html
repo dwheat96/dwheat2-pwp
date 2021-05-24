@@ -25,7 +25,7 @@
 
 
 
-<div class="jumbotron jumbotron fluid mb-5" >
+<div id="jumbotron" class="jumbotron jumbotron-fluid mb-5">
     <div class="container px-auto">
         <h1 class="display-4">Hi, I'm Derek</h1>
         <p class="lead">Drink Coffee. Code. </p>
@@ -139,7 +139,7 @@
         </div>
     </div>
     <div class="row">
-        <form action="http://localhost:4200/apis/" class="col m-3 mx-auto" id="contact">
+        <form action="./apis/" class="col m-3 mx-auto" id="contact">
             <div class="form-group">
                 <input class="form-control" type="text" placeholder="What do I call you?" aria-label="Name Field" id="name" name="name">
             </div>
@@ -153,12 +153,16 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="A quick message" aria-label="Subject Field" id="message" name="message"></textarea>
             </div>
         <!-- Make sure to add site key provided by google recaptcha -->
+            <div id="recap">
                 <div class="g-recaptcha" data-sitekey="6LfrLtQaAAAAACNAPvXxoIJpVpUJyuH15ZTJKXP5"></div>
+            </div>
                 <div class="row">
                     <button type="submit" class="btn btn-info mx-auto mb-5">Send</button>
                     <button type="reset" class="btn btn-info mx-auto mb-5">Reset</button>
                 </div>
+
             <div id="output-area"></div>
+
                 </form>
         <!-- END CONTACT FORM-->
 
