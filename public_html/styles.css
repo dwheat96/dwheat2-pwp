@@ -19,7 +19,7 @@
 
 }
 
-#portThumb {
+.portThumb {
     max-height: 8rem;
     max-width: auto;
     margin: 0 auto 0 auto;
@@ -39,7 +39,7 @@ h1  {
 
 
 
-#footerIcon {
+.footerIcon {
     margin: 1rem;
     max-height: 3rem;
     max-width: auto;
