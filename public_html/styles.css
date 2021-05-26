@@ -57,3 +57,51 @@ footer {
 .g-recaptcha {
     display: inline-block;
 }
+
+#theNav{
+    background-color: #3B2244;
+}
+
+#jumbotron{
+    background-color:#105160 ;
+    color: mintcream;
+}
+
+body{
+    background-color:#2D7670;
+    color: mintcream;
+}
+
+#recapYo{
+    background-color:#105160;
+}
+#conCnm{
+    background-color: #CD966B;
+}
+#footerRow{
+    background-color: #3B2244;
+    justify-content: center;
+}
+
+/*#theNav{*/
+/*    background-color: #464239;*/
+/*}*/
+
+/*#jumbotron{*/
+/*    background-color:#E3E5E0 ;*/
+/*}*/
+
+/*body{*/
+/*    background-color:#D1B780;*/
+/*}*/
+
+/*#recapYo{*/
+/*    background-color:#E3E5E0;*/
+/*}*/
+/*#conCnm{*/
+/*    background-color: #DDB040;*/
+/*}*/
+/*#footerRow{*/
+/*    background-color: #464239;*/
+/*    justify-content: center;*/
+/*}*/
